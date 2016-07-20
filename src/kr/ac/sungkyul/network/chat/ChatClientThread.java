@@ -17,8 +17,8 @@ public class ChatClientThread extends Thread{
 				String message = br.readLine();
 				System.out.println(message);
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			
 		}
 	}
 }

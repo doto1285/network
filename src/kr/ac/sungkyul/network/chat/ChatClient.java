@@ -38,9 +38,10 @@ public class ChatClient {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.print(">> ");
 				String input = scanner.nextLine();
-
+				if(input.equals("")){
+					continue;
+				}
 				if ("quit".equals(input)) {
 					pw.println("quit:");
 					pw.flush();
